@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 data = [ 
     "2-5 l: fllxf",
     "4-5 r: rrrjmrrrrrrh",
