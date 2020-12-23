@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 def str_to_int(s):
     return int(s.replace('F', '0')
                 .replace('B', '1')

@@ -1,19 +1,4 @@
-example = """abc
-
-a
-b
-c
-
-ab
-ac
-
-a
-a
-a
-a
-
-b
-"""
+#!/usr/bin/env python3
 
 def process_txt(txt):
     txt = txt.strip().split('\n\n')
@@ -45,6 +30,23 @@ with open('day6.txt', 'r') as data_file:
 
         # Process questions to which everybody answered yes
         every_declarations += everybody(group)
+
+example = """abc
+
+a
+b
+c
+
+ab
+ac
+
+a
+a
+a
+a
+
+b
+"""
 
 # data = process_txt(example)
 # for group in data:

@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import re
 data = """eyr:2029 pid:157374862
 byr:1991 ecl:amb hcl:#a97842 hgt:178cm
