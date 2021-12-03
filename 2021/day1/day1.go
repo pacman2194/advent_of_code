@@ -19,22 +19,24 @@ func main() {
 
 	scanner := bufio.NewScanner(file)
 
-	var prev, curr int
-	scanner.Scan()
-	prev, _ = strconv.Atoi(scanner.Text())
+	var depths []int
+	var incr int
 
-	incr := 0
 	for scanner.Scan() {
-		curr, _ = strconv.Atoi(scanner.Text())
-		if curr > prev {
-			incr += 1
-		}
-		prev = curr
+		temp, _ := strconv.Atoi(scanner.Text())
+		depths = append(depths, temp)
 	}
 
 	if err := scanner.Err(); err != nil {
 		fmt.Println(err)
 	}
+
+	for i := 0; i < (len(depths) - 3); i++ {
+		if depths[i] < depths[i+3] {
+			incr++
+		}
+	}
+
 	fmt.Println(incr)
 }
 
